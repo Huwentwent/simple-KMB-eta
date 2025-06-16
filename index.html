@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" translate="no">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel='stylesheet' href='style.css'>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ol@v10.3.1/ol.css" type="text/css">
+  <script src="https://cdn.jsdelivr.net/npm/ol@v10.3.1/dist/ol.js">
+  </script>
+  
+  <title>COMP 3322 Assignment 2</title>
+</head>
+
+<body>
+  <header>
+  <div class="header-title">
+    <u2><o2>KMB Bus Services</o2></u2>
+  </div>
+</header>
+  <div class="selector">
+    <label for="radius">Find Nearby Bus Stops Within
+    <select id="radius">
+      <option value="100">100 m </option>
+      <option value="200" selected>200 m </option>
+      <option value="300">300 m </option>
+      <option value="400">400 m </option>
+      <option value="500">500 m </option>
+    </select></label>
+  </div>
+  <div id="output"></div>
+  <script src='main.js'></script>
+</body>
+
+</html>

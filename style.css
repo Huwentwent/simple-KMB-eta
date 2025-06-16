@@ -1,0 +1,156 @@
+u2
+{
+    text-decoration-line: underline;
+    text-decoration-style: double;
+}
+o2
+{
+    text-decoration-line: overline;
+    text-decoration-style: double;
+}
+
+
+body
+{
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  font-size: 18px;
+}
+
+header
+{
+  font-size: 2em;
+  font-weight: bold;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.header-title
+{
+  text-align: center; 
+  white-space: nowrap; 
+}
+
+.selector
+{
+  font-size: 20px;
+  font-weight: bold;
+  margin: 20px 0 20px 0;
+  padding-left: 5px;
+}
+
+select
+{
+  padding: 5px;
+}
+
+#output
+{
+  margin-top: 20px;
+}
+
+.distance_and_stop_field
+{
+  cursor: pointer;
+  padding: 5px;
+}
+
+.selected_field
+{
+  background-color: yellow;
+}
+
+.heading_field{
+  display: flex;
+}
+
+.distance
+{
+  display: inline-block;
+  width: 150px;
+
+}
+
+
+.bus_stop_name::before
+{
+  display: inline-block;
+  content: "Stop: ";
+  color: black;
+  text-decoration: none;
+  padding-right: 3px;
+}
+
+.bus_stop_name
+{
+  display: inline-block;
+  width: 250px;
+  color: blue;
+
+
+}
+
+.details_container
+{
+  display: none;
+  flex-direction: row;
+  align-items: flex-start;
+  margin-top: 10px;
+}
+
+.eta_info
+{
+  flex: 1;
+}
+
+.etaElement
+{
+  padding: 5px;
+}
+
+.etaElement_route{
+  display: inline-flex;
+  font-weight: bold;
+  width:50px;
+}
+
+.etaElement_destination
+{
+  font-weight:normal;
+}
+
+
+.etaElement_eta::before
+{
+  content: "ETA: ";
+  color: black;
+  text-decoration: none;
+}
+
+.etaElement_eta
+{
+  font-weight: bold;
+  color: blue;
+}
+
+.map_container
+{
+  width: 50%;
+  height: 400px;
+}
+
+
+  
+@media screen and (max-width: 500px) {
+  .details_container {
+    flex-direction: column;
+    
+  }
+  .map_container {
+    width: 400px;
+    height: 400px;
+    margin-left: 0;
+  }
+  
+}
