@@ -9,3 +9,4 @@ it is a simple Kowloon Motor Bus estimated time of arrive web app. It is used to
 
 # Note
 1. It can only be used in Hong Kong where you can see KMB vehicles.
+2. It is Homework from HKU COMP 3322
